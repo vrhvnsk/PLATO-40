@@ -3,6 +3,12 @@
 
 **Proximata Hackathon 2026 · Rhomberg / PLATO × CLARA Future challenge**
 
+<img width="1435" height="668" alt="Screenshot 2026-11-14 at 14 36 13" src="https://github.com/user-attachments/assets/9b2915d7-6471-4806-8646-d8410a9d1609" />
+<img width="1440" height="684" alt="Screenshot 2026-11-14 at 14 36 28" src="https://github.com/user-attachments/assets/5d25be8b-e717-41a7-8ae8-1fda4ac69e43" />
+<img width="1435" height="692" alt="Screenshot 2026-11-14 at 14 36 42" src="https://github.com/user-attachments/assets/7bcc7b07-a56c-4a6e-9781-d773f4efe93f" />
+<img width="1440" height="689" alt="Screenshot 2026-11-14 at 14 36 59" src="https://github.com/user-attachments/assets/5e16528d-a74a-47fa-a9a1-85ea620207c4" />
+
+
 PLATO-40 is an offline prototype for a **fictional 40-room self-check-in hotel**. Using a synthetic year of bookings, guest requests, building telemetry and operations data, it detects problems, recommends actions, checks resource and safety constraints, simulates execution, and prepares evidence-linked recommendations for future buildings.
 
 > **Important:** This is a *synthetic replay and decision-support system*. It is not connected to real PLATO buildings, hotel booking systems, robots, equipment, guest messaging services or live operational APIs. No physical action is taken and no guest message is sent.
