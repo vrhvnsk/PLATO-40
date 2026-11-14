@@ -55,6 +55,7 @@ function Index() {
     },
   ] as const;
   const shortcuts = [
+    {number:"00",...dashboardPages.demo,meta:"Guided evidence trail",accent:"bg-primary text-primary-foreground"},
     {
       number: "01",
       ...dashboardPages.timeline,

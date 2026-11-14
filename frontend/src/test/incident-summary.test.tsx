@@ -1,8 +1,9 @@
 import type { AnchorHTMLAttributes } from "react";
-import { cleanup, fireEvent, render, screen, within, waitFor } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { IncidentProvider, useIncidentState } from "@/components/dashboard/IncidentState";
 import { IncidentsPage } from "@/routes/incidents";
+import { seedIncidentFixture } from "./incident-fixture";
 
 const { navigate } = vi.hoisted(() => ({ navigate: vi.fn() }));
 
@@ -36,25 +37,14 @@ function SelectionProbe() {
   return <output data-testid="selected-event">{state.id}</output>;
 }
 
-async function setup() {
+function setup() {
   render(
     <IncidentProvider>
       <IncidentsPage />
       <SelectionProbe />
     </IncidentProvider>,
   );
-
-  await waitFor(() => {
-    expect(screen.getByTestId("selected-event").textContent).not.toBe("");
-  });
-
-  fireEvent.change(screen.getByRole("textbox"), {
-    target: { value: "event-1035" },
-  });
-
-  await screen.findAllByRole("button", {
-    name: "Summary for event-1035",
-  });
+  fireEvent.change(screen.getByRole("textbox"), { target: { value: "event-1035" } });
 }
 
 function openSummary(index = 0) {
@@ -64,13 +54,13 @@ function openSummary(index = 0) {
 }
 
 afterEach(cleanup);
-beforeEach(() => navigate.mockClear());
+beforeEach(() => { navigate.mockClear(); seedIncidentFixture(); });
 
 describe("Incident summaries", () => {
   it.each([0, 1])(
     "opens from incident control %i without replacing the selected approval record",
-    async (index) => {
-      await setup();
+    (index) => {
+      setup();
       openSummary(index);
       expect(screen.getByRole("dialog")).toBeInTheDocument();
       expect(screen.getByTestId("selected-event")).toHaveTextContent("event-1000");
@@ -78,8 +68,8 @@ describe("Incident summaries", () => {
     },
   );
 
-  it("dismisses with the close control without navigating", async () => {
-    await setup();
+  it("dismisses with the close control without navigating", () => {
+    setup();
     openSummary();
     fireEvent.click(within(screen.getByRole("dialog")).getByRole("button", { name: "Close" }));
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
@@ -87,15 +77,15 @@ describe("Incident summaries", () => {
     expect(navigate).not.toHaveBeenCalled();
   });
 
-  it("dismisses with Escape", async () => {
-    await setup();
+  it("dismisses with Escape", () => {
+    setup();
     openSummary();
     fireEvent.keyDown(screen.getByRole("dialog"), { key: "Escape" });
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
   });
 
-  it("sets event-1035 before following the approvals link and closes the preview", async () => {
-    await setup();
+  it("sets event-1035 before following the approvals link and closes the preview", () => {
+    setup();
     openSummary();
     fireEvent.click(within(screen.getByRole("dialog")).getByRole("link"));
     expect(screen.getByTestId("selected-event")).toHaveTextContent("event-1035");

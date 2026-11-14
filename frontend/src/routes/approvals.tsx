@@ -163,42 +163,7 @@ function ApprovalsPage() {
             >
               {label(d.issue_type)}
             </h3>
-            {d.action === "notify_guest" && d.reason.startsWith("PROPOSED") ? (
-              <section className="mt-4 rounded-lg border border-primary/30 bg-card p-5">
-                <div className="mb-3 flex items-center justify-between gap-3">
-                  <div>
-                    <h3 className="font-display text-lg font-semibold">
-                      ✨ CLARA Suggestion
-                    </h3>
-                    <p className="text-xs text-muted-foreground">
-                    Guest communication · Multilingual templates by Adaption
-                    </p>
-                  </div>
-                  <span className="rounded border px-2 py-1 text-xs">
-                    Draft · Not sent
-                  </span>
-                </div>
-
-                <p className="mb-2 text-xs text-muted-foreground">
-                  Recommended guest message
-                </p>
-
-                <p className="whitespace-pre-wrap rounded-md bg-muted p-4 text-sm leading-relaxed">
-                  {d.reason}
-                </p>
-
-                <p className="mt-3 text-xs text-muted-foreground">
-                  CLARA selected a message template for the guest's recorded
-                  language. Room readiness must be independently verified.
-                  No message has been delivered.
-                </p>
-              </section>
-            ) : (
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed">
-                {d.reason}
-              </p>
-            )}
-            
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed">{d.reason}</p>
           </div>
           <div className="grid gap-7 border-y border-border py-6 sm:grid-cols-[1fr_160px]">
             <div>

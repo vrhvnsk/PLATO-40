@@ -1,0 +1,65 @@
+work_order_id,created_utc,asset_id,type,status,scheduled_utc,completed_utc,assigned_to,summary
+WO00001,2026-01-01T09:00:00Z,BUILDING,preventive,completed,2026-01-06T09:00:00Z,2026-01-06T10:30:00Z,TECH_1,"Legionella prevention: taps flushed in long-vacant rooms R210, R307, R406, R407, R409"
+WO00002,2026-01-08T15:30:00Z,R307,corrective,completed,2026-01-08T17:15:00Z,2026-01-09T10:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00003,2026-01-17T08:00:00Z,R106,corrective,completed,2026-01-17T14:00:00Z,2026-01-18T01:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00004,2026-01-29T00:00:00Z,HP1,corrective,completed,2026-01-29T05:30:00Z,2026-01-29T06:00:00Z,EXTERNAL_HVAC,Heat pump service: refrigerant leak sealed and recharged
+WO00005,2026-01-31T09:00:00Z,BUILDING,preventive,completed,2026-02-05T09:00:00Z,2026-02-05T10:00:00Z,TECH_1,"Legionella prevention: taps flushed in long-vacant rooms R206, R208, R401"
+WO00006,2026-02-04T07:00:00Z,R402,corrective,completed,2026-02-04T13:45:00Z,2026-02-05T00:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00007,2026-02-16T06:15:00Z,R308,corrective,completed,2026-02-16T11:15:00Z,2026-02-16T18:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00008,2026-02-18T18:15:00Z,R403,corrective,completed,2026-02-19T04:00:00Z,2026-02-19T09:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00009,2026-03-08T09:00:00Z,BUILDING,preventive,completed,2026-03-13T09:00:00Z,2026-03-13T10:30:00Z,TECH_1,"Legionella prevention: taps flushed in long-vacant rooms R101, R102, R202, R209, R302"
+WO00010,2026-03-10T22:00:00Z,R202,corrective,completed,2026-03-10T22:15:00Z,2026-03-10T23:30:00Z,EXTERNAL_PLUMBER,Burst flexible hose under washbasin replaced; floor dried; room inspected
+WO00011,2026-03-13T08:00:00Z,AHU1,preventive,completed,2026-03-20T08:00:00Z,2026-03-20T11:30:00Z,TECH_1,Replace AHU1 supply/extract filters (planned)
+WO00012,2026-04-01T08:00:00Z,BUILDING,preventive,completed,2026-04-06T08:00:00Z,2026-04-06T08:45:00Z,TECH_1,"Legionella prevention: taps flushed in long-vacant rooms R108, R304"
+WO00013,2026-04-03T19:45:00Z,R307,corrective,completed,2026-04-04T03:45:00Z,2026-04-04T09:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00014,2026-04-15T18:30:00Z,R106,corrective,completed,2026-04-16T04:00:00Z,2026-04-16T11:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00015,2026-05-06T14:15:00Z,R109,corrective,completed,2026-05-06T21:00:00Z,2026-05-07T10:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00016,2026-05-19T12:45:00Z,R310,corrective,completed,2026-05-19T15:45:00Z,2026-05-20T03:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00017,2026-05-22T05:30:00Z,R309,corrective,completed,2026-05-22T12:30:00Z,2026-05-22T19:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00018,2026-05-29T05:30:00Z,R101,corrective,completed,2026-05-29T06:30:00Z,2026-05-29T22:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00019,2026-05-29T19:00:00Z,R301,corrective,completed,2026-05-29T20:45:00Z,2026-05-30T13:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00020,2026-05-30T17:15:00Z,R408,corrective,completed,2026-05-30T20:00:00Z,2026-05-31T10:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00021,2026-06-02T11:15:00Z,R303,corrective,completed,2026-06-02T20:30:00Z,2026-06-03T04:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00022,2026-06-10T12:00:00Z,R108,corrective,completed,2026-06-10T15:30:00Z,2026-06-10T23:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00023,2026-06-11T07:00:00Z,AHU1,preventive,completed,2026-06-18T07:00:00Z,2026-06-18T11:45:00Z,TECH_1,Replace AHU1 supply/extract filters (planned)
+WO00024,2026-06-20T04:45:00Z,R107,corrective,completed,2026-06-20T06:30:00Z,2026-06-20T07:15:00Z,EXTERNAL_PLUMBER,Toilet fill valve replaced (continuous running)
+WO00025,2026-06-20T05:00:00Z,R402,corrective,completed,2026-06-20T08:15:00Z,2026-06-21T01:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00026,2026-06-26T05:30:00Z,R105,corrective,completed,2026-06-26T08:45:00Z,2026-06-26T22:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00027,2026-07-02T18:00:00Z,R105,corrective,completed,2026-07-03T03:30:00Z,2026-07-03T14:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00028,2026-07-17T18:15:00Z,R401,corrective,completed,2026-07-17T19:15:00Z,2026-07-18T14:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00029,2026-07-22T10:30:00Z,WM_MAIN,corrective,completed,2026-07-22T12:30:00Z,2026-07-22T14:30:00Z,EXTERNAL_PLUMBER,Leak on DHW circulation pipe in technical room repaired
+WO00030,2026-07-27T05:15:00Z,WM_R407,metering,completed,2026-07-30T05:15:00Z,2026-07-30T05:30:00Z,EXTERNAL_METERING,Water meter WM_R407 exchanged (calibration interval)
+WO00031,2026-07-31T05:15:00Z,R310,corrective,completed,2026-07-31T07:45:00Z,2026-07-31T16:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00032,2026-08-05T12:00:00Z,R105,corrective,completed,2026-08-05T20:00:00Z,2026-08-06T04:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00033,2026-08-07T08:00:00Z,BUILDING,preventive,completed,2026-08-12T08:00:00Z,2026-08-12T09:15:00Z,TECH_1,"Legionella prevention: taps flushed in long-vacant rooms R203, R304, R406, R410"
+WO00034,2026-08-10T05:30:00Z,AHU1,corrective,completed,2026-08-10T09:00:00Z,2026-08-10T10:30:00Z,EXTERNAL_HVAC,Heavily loaded AHU1 filters replaced (unplanned)
+WO00035,2026-08-16T18:30:00Z,R204,corrective,completed,2026-08-16T23:15:00Z,2026-08-17T11:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00036,2026-08-18T10:00:00Z,R302,corrective,completed,2026-08-18T15:45:00Z,2026-08-19T02:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00037,2026-08-23T14:15:00Z,R309,corrective,completed,2026-08-23T14:30:00Z,2026-08-23T15:45:00Z,EXTERNAL_PLUMBER,Burst flexible hose under washbasin replaced; floor dried; room inspected
+WO00038,2026-08-26T18:45:00Z,R403,corrective,completed,2026-08-26T23:30:00Z,2026-08-27T15:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00039,2026-09-06T08:45:00Z,R109,corrective,completed,2026-09-06T18:45:00Z,2026-09-07T02:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00040,2026-09-08T16:30:00Z,R304,corrective,completed,2026-09-09T00:30:00Z,2026-09-09T10:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00041,2026-09-20T16:30:00Z,R204,corrective,completed,2026-09-20T23:30:00Z,2026-09-21T05:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00042,2026-09-27T18:45:00Z,R303,corrective,completed,2026-09-27T19:45:00Z,2026-09-28T13:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00043,2026-10-01T08:00:00Z,BUILDING,preventive,completed,2026-10-06T08:00:00Z,2026-10-06T09:00:00Z,TECH_1,"Legionella prevention: taps flushed in long-vacant rooms R202, R206, R402"
+WO00044,2026-10-06T12:45:00Z,R102,corrective,completed,2026-10-06T18:45:00Z,2026-10-07T06:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00045,2026-10-09T16:00:00Z,R102,corrective,completed,2026-10-10T02:00:00Z,2026-10-10T13:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00046,2026-10-19T03:45:00Z,AHU1,corrective,completed,2026-10-19T10:45:00Z,2026-10-19T12:15:00Z,EXTERNAL_HVAC,Heavily loaded AHU1 filters replaced (unplanned)
+WO00047,2026-10-21T17:30:00Z,R406,corrective,completed,2026-10-21T22:15:00Z,2026-10-22T11:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00048,2026-10-31T09:00:00Z,BUILDING,preventive,completed,2026-11-05T09:00:00Z,2026-11-05T10:30:00Z,TECH_1,"Legionella prevention: taps flushed in long-vacant rooms R102, R206, R209, R306, R309"
+WO00049,2026-11-04T08:15:00Z,R202,corrective,completed,2026-11-04T14:00:00Z,2026-11-04T19:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00050,2026-11-04T12:15:00Z,R209,corrective,completed,2026-11-04T14:00:00Z,2026-11-04T14:45:00Z,TECH_1,Toilet fill valve replaced (continuous running)
+WO00051,2026-11-04T21:45:00Z,R307,corrective,completed,2026-11-04T23:30:00Z,2026-11-05T11:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00052,2026-11-05T09:30:00Z,R301,corrective,completed,2026-11-05T14:30:00Z,2026-11-05T19:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00053,2026-11-22T10:30:00Z,R202,corrective,completed,2026-11-22T15:30:00Z,2026-11-23T06:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00054,2026-11-24T17:15:00Z,R107,corrective,completed,2026-11-24T18:45:00Z,2026-11-25T04:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00055,2026-11-27T13:45:00Z,R308,corrective,completed,2026-11-27T17:00:00Z,2026-11-28T12:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00056,2026-12-01T09:00:00Z,BUILDING,preventive,completed,2026-12-06T09:00:00Z,2026-12-06T10:00:00Z,EXTERNAL_PLUMBER,"Legionella prevention: taps flushed in long-vacant rooms R107, R301, R302"
+WO00057,2026-12-01T23:00:00Z,WM_R110,metering,completed,2026-12-04T23:00:00Z,2026-12-04T23:15:00Z,EXTERNAL_METERING,Water meter WM_R110 exchanged (calibration interval)
+WO00058,2026-12-06T09:00:00Z,R309,corrective,completed,2026-12-06T15:00:00Z,2026-12-07T04:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00059,2026-12-08T21:00:00Z,HP1,corrective,completed,2026-12-09T02:30:00Z,2026-12-09T03:00:00Z,EXTERNAL_HVAC,Heat pump service: refrigerant leak sealed and recharged
+WO00060,2026-12-11T07:00:00Z,R302,corrective,completed,2026-12-11T17:00:00Z,2026-12-12T02:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00061,2026-12-15T19:15:00Z,R209,corrective,completed,2026-12-16T02:15:00Z,2026-12-16T15:15:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00062,2026-12-21T17:00:00Z,R101,corrective,completed,2026-12-21T18:00:00Z,2026-12-22T12:45:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00063,2026-12-22T09:45:00Z,R110,corrective,completed,2026-12-22T18:00:00Z,2026-12-23T01:30:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
+WO00064,2026-12-26T21:00:00Z,R401,corrective,completed,2026-12-27T03:00:00Z,2026-12-27T12:00:00Z,TECH_1,Guest-reported room defect; entry with guest consent or while vacant
