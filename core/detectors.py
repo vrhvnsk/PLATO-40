@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np
 from .decisions import make,iso
+from .guest_messages import propose_guest_message
 
 TZ='Europe/Vienna'
 
@@ -70,7 +71,7 @@ def detect_turnaround(data,sched):
         out.append(a)
         lang=str(getattr(req,'language','en')) if req is not None else 'en'
         due=getattr(req,'response_due_utc',None) if req is not None else None
-        msg=f'PROPOSED ({lang}): Your room is not confirmed ready yet. We will update you once housekeeping verifies readiness.'
+        msg = propose_guest_message(lang, "early_checkin")
         if due is not None and pd.notna(due):msg+=f' Respond by {iso(due)}.'
         out.append(make(t,[room],'room_turnaround','notify_guest','medium',msg,evidence,ep,dependencies=[a['event_id']],guest_ids=guest_ids,recipient_booking_ids=recipient_bookings(bk,room,t),verification='Verify booking recipient and delivery; manual review if unresolved.'))
         # Never infer successful cleaning from a proposed action.

@@ -1,0 +1,61 @@
+scenario,language,text
+cleaning_requested,en,We have received your cleaning request and will review available housekeeping capacity. We will confirm the next steps.
+towel_request,en,We have received your request for additional towels. Our housekeeping team will review availability and confirm the next steps.
+water_inspection,en,We are reviewing a potential water-system issue. We will share an update after the inspection and safety checks.
+room_not_ready,en,We are sorry that your room is not yet confirmed ready. We will notify you when housekeeping completes its checks.
+maintenance_review,en,Thank you for reporting the issue. Our team will review it and confirm the next steps. We have not yet completed a repair.
+temperature_comfort,en,We are sorry the room temperature is uncomfortable. Our team is reviewing the issue. We will update you after the appropriate safety checks.
+early_checkin,en,Thank you for your early check-in request. Your room is still being prepared. We will update you after housekeeping confirms that it is ready.
+cleaning_delay,en,Your room preparation is taking longer than expected. We will share an update as soon as the room has been checked.
+wifi_help,en,Thank you for reporting the Wi-Fi issue. Our team will investigate and update you when there is confirmed progress.
+arrival_update,en,Thank you for your message. We are checking your room status and will confirm any updated arrival arrangements when verified.
+towel_request,nl,We hebben uw verzoek om extra handdoeken ontvangen. Ons housekeeping-team zal de beschikbaarheid controleren en de volgende stappen bevestigen.
+temperature_comfort,nl,Het spijt ons dat de kamertemperatuur oncomfortabel is. Ons team bekijkt het probleem. Wij zullen u op de hoogte brengen na de juiste veiligheidscontroles.
+wifi_help,nl,Bedankt voor het melden van het wifi-probleem. Ons team zal dit onderzoeken en u op de hoogte stellen zodra er bevestigde voortgang is.
+water_inspection,nl,We onderzoeken een mogelijke kwestie met het watersysteem. We delen een update na de inspectie en veiligheidscontroles.
+arrival_update,nl,Bedankt voor uw bericht. Wij controleren de status van uw kamer en bevestigen eventuele gewijzigde aankomstafspraken zodra deze geverifieerd zijn.
+early_checkin,nl,Bedankt voor uw verzoek om vroeg in te checken. Uw kamer wordt nog voorbereid. Wij nemen contact met u op zodra de housekeeping heeft bevestigd dat de kamer gereed is.
+maintenance_review,nl,Bedankt voor het melden van het probleem. Ons team zal het beoordelen en de volgende stappen bevestigen. We hebben de reparatie nog niet voltooid.
+cleaning_requested,nl,We hebben uw verzoek voor schoonmaak ontvangen en zullen de beschikbare capaciteit van de huishouding beoordelen. We zullen de volgende stappen bevestigen.
+room_not_ready,nl,Het spijt ons dat uw kamer nog niet als gereed is bevestigd. Wij laten het u weten zodra de huishouding de controles heeft afgerond.
+cleaning_delay,nl,De voorbereiding van uw kamer neemt langer in beslag dan verwacht. Wij zullen een update delen zodra de kamer is gecontroleerd.
+room_not_ready,es,Lamentamos que su habitación aún no haya sido confirmada como lista. Le notificaremos cuando el servicio de limpieza complete sus verificaciones.
+cleaning_requested,es,Hemos recibido su solicitud de limpieza y revisaremos la capacidad disponible del servicio de habitaciones. Confirmaremos los siguientes pasos.
+maintenance_review,es,Gracias por reportar el problema. Nuestro equipo lo revisará y confirmará los siguientes pasos. Aún no hemos completado la reparación.
+cleaning_delay,es,La preparación de su habitación está tomando más tiempo de lo esperado. Compartiremos una actualización tan pronto como la habitación haya sido revisada.
+water_inspection,es,Estamos revisando un posible problema en el sistema de agua. Compartiremos una actualización después de la inspección y las verificaciones de seguridad.
+arrival_update,es,Gracias por su mensaje. Estamos verificando el estado de su habitación y confirmaremos cualquier arreglo de llegada actualizado cuando sea verificado.
+temperature_comfort,es,Lamentamos que la temperatura de la habitación sea incómoda. Nuestro equipo está revisando el problema. Le informaremos después de realizar las verificaciones de seguridad correspondientes.
+towel_request,es,Hemos recibido su solicitud de toallas adicionales. Nuestro equipo de housekeeping revisará la disponibilidad y confirmará los siguientes pasos.
+early_checkin,es,Gracias por su solicitud de check-in temprano. Su habitación aún se está preparando. Le informaremos una vez que housekeeping confirme que está lista.
+wifi_help,es,Gracias por reportar el problema con el Wi-Fi. Nuestro equipo lo investigará y le actualizaremos cuando haya un progreso confirmado.
+early_checkin,it,Grazie per la sua richiesta di check-in anticipato. La sua camera è ancora in fase di preparazione. La aggiorneremo non appena il personale delle pulizie confermerà che è pronta.
+room_not_ready,it,"Ci scusiamo, ma la sua camera non è ancora stata confermata come pronta. La avviseremo non appena le pulizie avranno completato i controlli."
+arrival_update,it,Grazie per il suo messaggio. Stiamo verificando lo stato della sua camera e confermeremo eventuali aggiornamenti sulle modalità di arrivo non appena verificati.
+maintenance_review,it,Grazie per aver segnalato il problema. Il nostro team lo esaminerà e confermerà i prossimi passi. Non abbiamo ancora completato la riparazione.
+water_inspection,it,Stiamo esaminando un potenziale problema al sistema idrico. Condivideremo un aggiornamento dopo l'ispezione e i controlli di sicurezza.
+temperature_comfort,it,Ci scusiamo per la temperatura scomoda nella stanza. Il nostro team sta esaminando il problema. Vi aggiorneremo dopo le opportune verifiche di sicurezza.
+wifi_help,it,Grazie per aver segnalato il problema Wi-Fi. Il nostro team indagherà e vi aggiornerà non appena ci saranno progressi confermati.
+towel_request,it,Abbiamo ricevuto la sua richiesta di asciugamani aggiuntivi. Il nostro team housekeeping verificherà la disponibilità e confermerà i prossimi passi.
+cleaning_delay,it,La preparazione della sua camera sta richiedendo più tempo del previsto. Condivideremo un aggiornamento non appena la camera sarà stata controllata.
+cleaning_requested,it,Abbiamo ricevuto la sua richiesta di pulizia e verificheremo la disponibilità del personale addetto alle pulizie. Le confermeremo i prossimi passi.
+wifi_help,fr,Merci d'avoir signalé le problème de Wi-Fi. Notre équipe va enquêter et vous tiendra informé dès qu'il y aura des progrès confirmés.
+temperature_comfort,fr,Nous sommes désolés que la température de la chambre soit inconfortable. Notre équipe examine le problème. Nous vous tiendrons informé après les vérifications de sécurité appropriées.
+arrival_update,fr,Nous vous remercions pour votre message. Nous vérifions le statut de votre chambre et vous confirmerons toute disposition d'arrivée mise à jour dès vérification.
+cleaning_delay,fr,La préparation de votre chambre prend plus de temps que prévu. Nous vous communiquerons une mise à jour dès que la chambre aura été vérifiée.
+water_inspection,fr,Nous examinons un problème potentiel lié au système d'eau. Nous vous ferons part d'une mise à jour après l'inspection et les vérifications de sécurité.
+cleaning_requested,fr,Nous avons reçu votre demande de nettoyage et examinerons les capacités disponibles du service d'étage. Nous vous confirmerons les prochaines étapes.
+maintenance_review,fr,Merci d'avoir signalé le problème. Notre équipe va l'examiner et confirmer les prochaines étapes. Nous n'avons pas encore effectué la réparation.
+early_checkin,fr,Merci pour votre demande d'arrivée anticipée. Votre chambre est toujours en cours de préparation. Nous vous tiendrons informé dès que le service d'étage confirmera qu'elle est prête.
+room_not_ready,fr,Nous sommes désolés que votre chambre ne soit pas encore confirmée comme prête. Nous vous informerons dès que le service d'étage aura terminé ses vérifications.
+towel_request,fr,Nous avons bien reçu votre demande de serviettes supplémentaires. Notre équipe de ménage va vérifier la disponibilité et confirmer les prochaines étapes.
+towel_request,de,Wir haben Ihre Anfrage nach zusätzlichen Handtüchern erhalten. Unser Housekeeping-Team prüft die Verfügbarkeit und bestätigt das weitere Vorgehen.
+water_inspection,de,Wir überprüfen eine mögliche Störung im Wassersystem. Wir werden Ihnen nach der Inspektion und den Sicherheitsprüfungen ein Update mitteilen.
+temperature_comfort,de,"Es tut uns leid, dass die Raumtemperatur unangenehm ist. Unser Team prüft das Problem. Wir werden Sie nach den entsprechenden Sicherheitschecks informieren."
+early_checkin,de,"Vielen Dank für Ihre Anfrage zum frühen Check-in. Ihr Zimmer wird noch vorbereitet. Wir werden Sie informieren, sobald die Housekeeping-Abteilung die Fertigstellung bestätigt hat."
+room_not_ready,de,"Es tut uns leid, dass Ihr Zimmer noch nicht als bereit bestätigt wurde. Wir werden Sie benachrichtigen, sobald die Housekeeping-Abteilung ihre Prüfungen abgeschlossen hat."
+cleaning_delay,de,"Die Vorbereitung Ihres Zimmers dauert länger als erwartet. Wir geben Ihnen ein Update, sobald das Zimmer überprüft wurde."
+cleaning_requested,de,Wir haben Ihre Reinigungsanfrage erhalten und prüfen die verfügbaren Kapazitäten des Housekeepings. Wir werden die nächsten Schritte bestätigen.
+wifi_help,de,"Vielen Dank für die Meldung des Wi-Fi-Problems. Unser Team wird den Vorfall untersuchen und Sie informieren, sobald bestätigte Fortschritte vorliegen."
+arrival_update,de,"Vielen Dank für Ihre Nachricht. Wir prüfen den Status Ihres Zimmers und bestätigen alle aktualisierten Ankunftsvereinbarungen, sobald diese verifiziert sind."
+maintenance_review,de,Vielen Dank für die Meldung des Problems. Unser Team wird es prüfen und die nächsten Schritte bestätigen. Eine Reparatur wurde noch nicht durchgeführt.
