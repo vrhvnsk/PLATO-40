@@ -26,5 +26,6 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run test -- --passWithNoTests
-      - run: npx --yes --package=@playwright/test playwright install --with-deps chromium
-      - run: npx --yes --package=@playwright/test playwright test
+      - run: npm install --no-save --package-lock=false @playwright/test
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test
