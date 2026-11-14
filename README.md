@@ -119,8 +119,6 @@ Open the local URL printed by Vite (typically **http://localhost:8080**).
 | **Incidents** | Incident evidence, priority and proposed actions |
 | **Approvals** | Action proposals, mock-execution status, human oversight and CLARA multilingual drafts |
 
-The retired **Live demo** page is not in the navigation. The `/demo` route file still exists but is not part of the current guided user flow.
-
 The frontend initially loads `frontend/public/decisions.jsonl`. On Overview you can use **Reload URL** or import a backend ZIP/JSONL. UI approval and consent checkboxes are **local simulations**, not calls to the backend executor. When importing a new decision file, the UI deliberately clears its saved execution mapping to avoid mismatched evidence.
 
 ### Optional evaluation tools
@@ -315,7 +313,6 @@ The `pre-holdout` tag is the frozen baseline. In the current repository it point
 - `7043343`: offline Adaption-expanded multilingual CLARA selector and templates.
 - `9026deb`: refreshed bundled frontend decision data.
 - `1fed8f8`: visible CLARA card on Approvals.
-- Later changes: hide the retired Live demo from navigation and remove its Overview shortcut.
 
 **Post-tag-change explanation:** These later changes improve guest-draft wording, display and navigation. The frontend decision bundle was regenerated as part of the multilingual work, resulting in a different record count. Therefore the newer replay should **not** be described as identical to the frozen baseline, nor should unexplained differences be attributed solely to translation. The historical root replay and refreshed frontend replay must be assessed as distinct artifacts.
 
@@ -325,7 +322,7 @@ The `pre-holdout` tag is the frozen baseline. In the current repository it point
 | --- | --- |
 | Python backend tests | **149 passed** in the team's local integrated run (deprecation warnings remain) |
 | React frontend production build | **Succeeded locally** after `npm ci` |
-| Frontend component tests | **15 passed, 6 failed**, in incident-state/summary tests during the recorded local run |
+| Frontend component tests | Previously **15 passed, 6 failed** in an older local run; the team subsequently reported passing CI tests |
 | Multilingual backend quickstart | **474 decisions / 317 episodes**, including 85 `notify_guest` decisions in the tested run |
 | Full development replay with CLARA change | **6,146 decisions / 4,250 episodes** in the recorded local run |
 | Earlier bundled development artifact | **6,290 decisions**, from a different saved run; not equivalent to the refreshed file |
