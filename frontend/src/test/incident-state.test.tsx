@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 import { useState } from "react";
 import { IncidentProvider, useIncidentState } from "@/components/dashboard/IncidentState";
@@ -34,11 +34,17 @@ function NavigationProbe() {
 }
 
 describe("Shared sample incident state", () => {
-  it("keeps the selected event when a section unmounts and the next section opens", () => {
+  it("keeps the selected event when a section unmounts and the next section opens", async () => {
     render(<NavigationProbe />);
+
+    await waitFor(() => {
+      expect(screen.getByTestId("event")).toHaveTextContent("event-1000");
+    });
+
     fireEvent.click(screen.getByRole("button", { name: "Select" }));
     fireEvent.click(screen.getByRole("button", { name: "Change page" }));
-    expect(screen.getByTestId("event").textContent).toBe("event-1001");
+
+    expect(screen.getByTestId("event")).toHaveTextContent("event-1001");
   });
 
   it("keeps simulated human approval when switching sections", () => {
