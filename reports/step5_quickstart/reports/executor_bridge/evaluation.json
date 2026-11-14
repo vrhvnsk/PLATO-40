@@ -1,0 +1,16 @@
+{
+  "decision_count": 474,
+  "lifecycle_counts": {
+    "awaiting_approval": 102,
+    "proposed": 372
+  },
+  "outcome_counts": {
+    "unknown": 474
+  },
+  "warning_counts": {},
+  "verification_plan_coverage": 474,
+  "evidence_reference_coverage": 474,
+  "approval_gate_coverage": 101,
+  "approval_gated_decisions": 101,
+  "note": "Unknown means no attributable observed outcome. Static coverage is not proof of physical execution or effectiveness."
+}

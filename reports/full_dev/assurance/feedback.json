@@ -1,0 +1,147 @@
+{
+  "methodology": "Descriptive, deterministic, post-replay analysis of emitted decisions. No counterfactual or physical outcome is inferred.",
+  "data_limitations": [
+    "Decisions are proposals or mock actions, not proof of physical execution.",
+    "Counts do not establish false-positive rates without labeled ground truth.",
+    "No measured cost, CO2, water, or labor savings are asserted.",
+    "Design recommendations are hypotheses pending equipment and work-order validation."
+  ],
+  "top_assets_by_decisions": [
+    {
+      "asset": "HP1",
+      "decisions": 314
+    },
+    {
+      "asset": "PV1",
+      "decisions": 306
+    },
+    {
+      "asset": "BAT1",
+      "decisions": 306
+    },
+    {
+      "asset": "R102",
+      "decisions": 188
+    },
+    {
+      "asset": "R103",
+      "decisions": 184
+    },
+    {
+      "asset": "R110",
+      "decisions": 180
+    },
+    {
+      "asset": "R107",
+      "decisions": 180
+    },
+    {
+      "asset": "R106",
+      "decisions": 180
+    },
+    {
+      "asset": "R407",
+      "decisions": 170
+    },
+    {
+      "asset": "R109",
+      "decisions": 170
+    }
+  ],
+  "recommendations": [
+    {
+      "owner": "CLARA",
+      "title": "Review persistent cold-room escalations",
+      "observation": "684 heating-comfort approval requests recorded in replay.",
+      "recommendation": "Review room-level recovery windows and escalation timing before changing setpoint or alert thresholds.",
+      "validation_required": "Compare occupied-room temperature trajectories before/after simulated adjustments; verify 20–23 C band and approval latency.",
+      "supporting_event_ids": [
+        "D-fbe1ac6a83a3c5ad",
+        "D-1029983f41032a99",
+        "D-eb5247dab7324aac",
+        "D-c654fe57df0ca059",
+        "D-2d56817d3719392d",
+        "D-53726800e9908a1f",
+        "D-0d8357ee202f6a87",
+        "D-fb317e7a42efebe8"
+      ],
+      "confidence": "medium",
+      "impact_estimate": null,
+      "status": "proposed_not_verified"
+    },
+    {
+      "owner": "CLARA",
+      "title": "Evaluate weekend cleaning capacity",
+      "observation": "1578 occupancy-surge cleaning proposals recorded.",
+      "recommendation": "Compare arrival deadlines against verified cleaner/robot reservations and recorded completion; review shift staffing for peak days.",
+      "validation_required": "Measure missed deadlines and staff utilization from roster plus completion events, not proposal counts.",
+      "supporting_event_ids": [
+        "D-097a495952198a69",
+        "D-207824038d66c57c",
+        "D-257e1a43c62a3849",
+        "D-391dee8c760607bc",
+        "D-39df64b97f3ffc1f",
+        "D-4de48e17589b39b4",
+        "D-7dd44b6bd01edcf4",
+        "D-b376afcdf387ceee"
+      ],
+      "confidence": "medium",
+      "impact_estimate": null,
+      "status": "proposed_not_verified"
+    },
+    {
+      "owner": "CLARA",
+      "title": "Track outstanding vendor requests",
+      "observation": "222 logistics vendor-order or escalation decisions recorded.",
+      "recommendation": "Maintain pending/accepted/fulfilled service state and suppress unnecessary repeat proposals until telemetry or vendor confirmation changes state.",
+      "validation_required": "Join service acknowledgements with later stock/fill readings and calculate confirmed lead times.",
+      "supporting_event_ids": [
+        "D-305024c4011eb138",
+        "D-71a8ac0f26725001",
+        "D-536106a36f5720e1",
+        "D-fe15c1e96200f239",
+        "D-e6b82b006df7444c",
+        "D-b427500cf6cb3670",
+        "D-19fec2603e005ffd",
+        "D-67d87c0ed400a02b"
+      ],
+      "confidence": "medium",
+      "impact_estimate": null,
+      "status": "proposed_not_verified"
+    },
+    {
+      "owner": "PLATO",
+      "title": "Investigate plant maintainability and sensor redundancy",
+      "observation": "Replay includes ventilation/plant maintenance signals; failure causality is not established.",
+      "recommendation": "Assess accessible service points, differential-pressure sensing and fault telemetry in the next building design.",
+      "validation_required": "Validate against confirmed work orders, inspection results and equipment fault logs before specifying hardware changes.",
+      "supporting_event_ids": [
+        "D-3a89019c77640b4c",
+        "D-33fa652f095bedb9",
+        "D-67bce8c75377bc85",
+        "D-dc986a43c54a137d",
+        "D-6396214b6ee211de",
+        "D-0f9441f188b90794",
+        "D-40aa16452b9e5f3a"
+      ],
+      "confidence": "low",
+      "impact_estimate": null,
+      "status": "proposed_not_verified"
+    },
+    {
+      "owner": "PLATO",
+      "title": "Evaluate water-meter observability",
+      "observation": "Replay includes suspected water leaks requiring investigation.",
+      "recommendation": "Study whether room and main meters plus diagnostic telemetry adequately distinguish leaks from meter artifacts.",
+      "validation_required": "Cross-check meter gaps against confirmed repairs and known occupancy; do not infer leak rate or savings from alerts.",
+      "supporting_event_ids": [
+        "D-48ee940d10144e47",
+        "D-0f4d935bb8c7d19d",
+        "D-e67eb39080e459b4"
+      ],
+      "confidence": "low",
+      "impact_estimate": null,
+      "status": "proposed_not_verified"
+    }
+  ]
+}

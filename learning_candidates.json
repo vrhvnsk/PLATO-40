@@ -1,0 +1,1160 @@
+[
+  {
+    "audience": "CLARA",
+    "category": "data_quality",
+    "title": "Data Quality: rule and workflow review",
+    "episode_count": 12,
+    "decision_count": 12,
+    "assets": [
+      "AHU1",
+      "HP1",
+      "R105",
+      "R405"
+    ],
+    "months": [
+      "2026-02",
+      "2026-03",
+      "2026-07",
+      "2026-08",
+      "2026-10",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "MISSING-AHU1-filter_dp_pa-2026-02-02T16:00:00Z",
+      "MISSING-AHU1-airflow_m3h-2026-03-02T00:30:00Z",
+      "MISSING-HP1-supply_temp_c-2026-03-24T15:00:00Z"
+    ],
+    "suggestion": "Improve sensor freshness checks and require quality gating before control decisions.",
+    "validation": "Inject sensor freezes and missingness; measure false alarms and fail-closed behavior.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "data_quality",
+    "title": "Recurrent data quality at AHU1",
+    "episode_count": 7,
+    "decision_count": 7,
+    "assets": [
+      "AHU1"
+    ],
+    "months": [
+      "2026-02",
+      "2026-03",
+      "2026-07",
+      "2026-08",
+      "2026-10"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "MISSING-AHU1-filter_dp_pa-2026-02-02T16:00:00Z",
+      "MISSING-AHU1-airflow_m3h-2026-03-02T00:30:00Z",
+      "MISSING-AHU1-filter_dp_pa-2026-07-21T06:15:00Z"
+    ],
+    "suggestion": "Investigate asset AHU1 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for AHU1 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "data_quality",
+    "title": "Recurrent data quality at HP1",
+    "episode_count": 3,
+    "decision_count": 3,
+    "assets": [
+      "HP1"
+    ],
+    "months": [
+      "2026-03",
+      "2026-07",
+      "2026-10"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "MISSING-HP1-supply_temp_c-2026-03-24T15:00:00Z",
+      "MISSING-HP1-heat_output_kw-2026-07-10T12:00:00Z",
+      "MISSING-HP1-supply_temp_c-2026-10-05T10:00:00Z"
+    ],
+    "suggestion": "Investigate asset HP1 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for HP1 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "PLATO",
+    "category": "data_quality",
+    "title": "Data Quality: design review candidate",
+    "episode_count": 12,
+    "decision_count": 12,
+    "assets": [
+      "AHU1",
+      "HP1",
+      "R105",
+      "R405"
+    ],
+    "months": [
+      "2026-02",
+      "2026-03",
+      "2026-07",
+      "2026-08",
+      "2026-10",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "MISSING-AHU1-filter_dp_pa-2026-02-02T16:00:00Z",
+      "MISSING-AHU1-airflow_m3h-2026-03-02T00:30:00Z",
+      "MISSING-HP1-supply_temp_c-2026-03-24T15:00:00Z"
+    ],
+    "suggestion": "Review sensor redundancy and maintainability in future specifications.",
+    "validation": "Require site validation, lifecycle-cost comparison, and engineering sign-off before design changes.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "energy_optimization",
+    "title": "Energy Optimization: rule and workflow review",
+    "episode_count": 306,
+    "decision_count": 306,
+    "assets": [
+      "PV1",
+      "HP1",
+      "BAT1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.55,
+    "sample_episode_ids": [
+      "BAT-PLAN-2026-01-01T12:00:00Z",
+      "BAT-PLAN-2026-01-02T12:00:00Z",
+      "BAT-PLAN-2026-01-03T12:00:00Z"
+    ],
+    "suggestion": "Tune tariff/PV-aware proposals while retaining comfort and battery safety constraints.",
+    "validation": "Replay against a fixed no-optimisation baseline; report cost and comfort with uncertainty.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "energy_optimization",
+    "title": "Recurrent energy optimization at BAT1",
+    "episode_count": 306,
+    "decision_count": 306,
+    "assets": [
+      "PV1",
+      "HP1",
+      "BAT1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.55,
+    "sample_episode_ids": [
+      "BAT-PLAN-2026-01-01T12:00:00Z",
+      "BAT-PLAN-2026-01-02T12:00:00Z",
+      "BAT-PLAN-2026-01-03T12:00:00Z"
+    ],
+    "suggestion": "Investigate asset BAT1 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for BAT1 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "energy_optimization",
+    "title": "Recurrent energy optimization at HP1",
+    "episode_count": 306,
+    "decision_count": 306,
+    "assets": [
+      "PV1",
+      "HP1",
+      "BAT1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.55,
+    "sample_episode_ids": [
+      "BAT-PLAN-2026-01-01T12:00:00Z",
+      "BAT-PLAN-2026-01-02T12:00:00Z",
+      "BAT-PLAN-2026-01-03T12:00:00Z"
+    ],
+    "suggestion": "Investigate asset HP1 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for HP1 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "energy_optimization",
+    "title": "Recurrent energy optimization at PV1",
+    "episode_count": 306,
+    "decision_count": 306,
+    "assets": [
+      "PV1",
+      "HP1",
+      "BAT1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.55,
+    "sample_episode_ids": [
+      "BAT-PLAN-2026-01-01T12:00:00Z",
+      "BAT-PLAN-2026-01-02T12:00:00Z",
+      "BAT-PLAN-2026-01-03T12:00:00Z"
+    ],
+    "suggestion": "Investigate asset PV1 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for PV1 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "PLATO",
+    "category": "energy_optimization",
+    "title": "Energy Optimization: design review candidate",
+    "episode_count": 306,
+    "decision_count": 306,
+    "assets": [
+      "PV1",
+      "HP1",
+      "BAT1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.55,
+    "sample_episode_ids": [
+      "BAT-PLAN-2026-01-01T12:00:00Z",
+      "BAT-PLAN-2026-01-02T12:00:00Z",
+      "BAT-PLAN-2026-01-03T12:00:00Z"
+    ],
+    "suggestion": "Evaluate future storage/PV sizing only after measured counterfactual benefits.",
+    "validation": "Require site validation, lifecycle-cost comparison, and engineering sign-off before design changes.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "heating_comfort",
+    "title": "Heating Comfort: rule and workflow review",
+    "episode_count": 1140,
+    "decision_count": 1824,
+    "assets": [
+      "R106",
+      "R107",
+      "R109",
+      "R105",
+      "R110"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "COLD-R310-2026-01-01T00:00:00Z",
+      "COLD-R102-2026-01-01T00:00:00Z",
+      "COLD-R107-2026-01-01T00:00:00Z"
+    ],
+    "suggestion": "Review sustained cold-room escalation and occupied-room comfort thresholds.",
+    "validation": "Inspect raw temperature trajectories and occupied-room false positives.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "heating_comfort",
+    "title": "Recurrent heating comfort at R106",
+    "episode_count": 55,
+    "decision_count": 90,
+    "assets": [
+      "R106"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "COLD-R106-2026-01-05T14:00:00Z",
+      "COLD-R106-2026-01-12T08:15:00Z",
+      "COLD-R106-2026-01-15T07:15:00Z"
+    ],
+    "suggestion": "Investigate asset R106 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for R106 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "heating_comfort",
+    "title": "Recurrent heating comfort at R107",
+    "episode_count": 54,
+    "decision_count": 88,
+    "assets": [
+      "R107"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "COLD-R107-2026-01-01T00:00:00Z",
+      "COLD-R107-2026-01-02T08:45:00Z",
+      "COLD-R107-2026-01-10T14:00:00Z"
+    ],
+    "suggestion": "Investigate asset R107 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for R107 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "heating_comfort",
+    "title": "Recurrent heating comfort at R109",
+    "episode_count": 51,
+    "decision_count": 78,
+    "assets": [
+      "R109"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "COLD-R109-2026-01-06T14:00:00Z",
+      "COLD-R109-2026-01-09T08:30:00Z",
+      "COLD-R109-2026-01-12T14:00:00Z"
+    ],
+    "suggestion": "Investigate asset R109 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for R109 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "PLATO",
+    "category": "heating_comfort",
+    "title": "Heating Comfort: design review candidate",
+    "episode_count": 1140,
+    "decision_count": 1824,
+    "assets": [
+      "R106",
+      "R107",
+      "R109",
+      "R105",
+      "R110"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "COLD-R310-2026-01-01T00:00:00Z",
+      "COLD-R102-2026-01-01T00:00:00Z",
+      "COLD-R107-2026-01-01T00:00:00Z"
+    ],
+    "suggestion": "Review zoning, envelope and controllability for repeatedly uncomfortable rooms.",
+    "validation": "Require site validation, lifecycle-cost comparison, and engineering sign-off before design changes.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "heating_plant",
+    "title": "Heating Plant: rule and workflow review",
+    "episode_count": 5,
+    "decision_count": 5,
+    "assets": [
+      "HP1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "HP1-LOCKOUT-2026-01-25T06:30:00Z",
+      "HP1-LOCKOUT-2026-11-23T02:45:00Z",
+      "HP1-LOCKOUT-2026-12-06T07:45:00Z"
+    ],
+    "suggestion": "Review heat-pump degradation escalation and technician availability.",
+    "validation": "Cross-check plant telemetry, maintenance records, and benign weather-driven changes.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "heating_plant",
+    "title": "Recurrent heating plant at HP1",
+    "episode_count": 5,
+    "decision_count": 5,
+    "assets": [
+      "HP1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "HP1-LOCKOUT-2026-01-25T06:30:00Z",
+      "HP1-LOCKOUT-2026-11-23T02:45:00Z",
+      "HP1-LOCKOUT-2026-12-06T07:45:00Z"
+    ],
+    "suggestion": "Investigate asset HP1 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for HP1 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "PLATO",
+    "category": "heating_plant",
+    "title": "Heating Plant: design review candidate",
+    "episode_count": 5,
+    "decision_count": 5,
+    "assets": [
+      "HP1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "HP1-LOCKOUT-2026-01-25T06:30:00Z",
+      "HP1-LOCKOUT-2026-11-23T02:45:00Z",
+      "HP1-LOCKOUT-2026-12-06T07:45:00Z"
+    ],
+    "suggestion": "Review service access and instrumentation for repeatedly degraded equipment.",
+    "validation": "Require site validation, lifecycle-cost comparison, and engineering sign-off before design changes.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "logistics",
+    "title": "Logistics: rule and workflow review",
+    "episode_count": 274,
+    "decision_count": 274,
+    "assets": [
+      "VEND1",
+      "WASTE_MAIN",
+      "WASTE_F1",
+      "WASTE_F2",
+      "WASTE_F3"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "LOG-FORECAST-WASTE_F2-fill_pct-2026-01-02T13:00:00Z",
+      "LOG-FORECAST-WASTE_MAIN-fill_pct-2026-01-03T14:00:00Z",
+      "LOG-FORECAST-VEND1-stock_snacks-2026-01-04T22:00:00Z"
+    ],
+    "suggestion": "Reassess inventory reorder points, delivery lead times, and resource assignment.",
+    "validation": "Measure stockout lead time and confirmed fulfillment against historical work orders.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "logistics",
+    "title": "Recurrent logistics at VEND1",
+    "episode_count": 156,
+    "decision_count": 156,
+    "assets": [
+      "VEND1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "LOG-FORECAST-VEND1-stock_snacks-2026-01-04T22:00:00Z",
+      "LOG-FORECAST-VEND1-stock_snacks-2026-01-10T22:00:00Z",
+      "LOG-FORECAST-VEND1-stock_snacks-2026-01-16T21:00:00Z"
+    ],
+    "suggestion": "Investigate asset VEND1 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for VEND1 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "logistics",
+    "title": "Recurrent logistics at WASTE_MAIN",
+    "episode_count": 66,
+    "decision_count": 66,
+    "assets": [
+      "WASTE_MAIN"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "LOG-FORECAST-WASTE_MAIN-fill_pct-2026-01-03T14:00:00Z",
+      "LOG-FORECAST-WASTE_MAIN-fill_pct-2026-01-09T14:00:00Z",
+      "LOG-FORECAST-WASTE_MAIN-fill_pct-2026-01-18T14:00:00Z"
+    ],
+    "suggestion": "Investigate asset WASTE_MAIN before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for WASTE_MAIN and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "logistics",
+    "title": "Recurrent logistics at WASTE_F1",
+    "episode_count": 16,
+    "decision_count": 16,
+    "assets": [
+      "WASTE_F1"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-09",
+      "2026-10"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "LOG-FORECAST-WASTE_F1-fill_pct-2026-01-09T11:00:00Z",
+      "LOG-FORECAST-WASTE_F1-fill_pct-2026-01-18T11:00:00Z",
+      "LOG-FORECAST-WASTE_F1-fill_pct-2026-02-18T13:00:00Z"
+    ],
+    "suggestion": "Investigate asset WASTE_F1 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for WASTE_F1 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "PLATO",
+    "category": "logistics",
+    "title": "Logistics: design review candidate",
+    "episode_count": 274,
+    "decision_count": 274,
+    "assets": [
+      "VEND1",
+      "WASTE_MAIN",
+      "WASTE_F1",
+      "WASTE_F2",
+      "WASTE_F3"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "LOG-FORECAST-WASTE_F2-fill_pct-2026-01-02T13:00:00Z",
+      "LOG-FORECAST-WASTE_MAIN-fill_pct-2026-01-03T14:00:00Z",
+      "LOG-FORECAST-VEND1-stock_snacks-2026-01-04T22:00:00Z"
+    ],
+    "suggestion": "Review delivery access, storage capacity and robot-compatible paths.",
+    "validation": "Require site validation, lifecycle-cost comparison, and engineering sign-off before design changes.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "occupancy_surge",
+    "title": "Occupancy Surge: rule and workflow review",
+    "episode_count": 1656,
+    "decision_count": 1656,
+    "assets": [
+      "R409",
+      "R404",
+      "R408",
+      "R304",
+      "R407"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12",
+      "2027-01"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "SURGE-2026-01-02",
+      "SURGE-2026-01-02-R104",
+      "SURGE-2026-01-02-R201"
+    ],
+    "suggestion": "Adjust cleaning and logistics forecasts for occupancy surges.",
+    "validation": "Compare predicted versus actual arrivals, staffing load and late turnovers.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "occupancy_surge",
+    "title": "Recurrent occupancy surge at R409",
+    "episode_count": 61,
+    "decision_count": 61,
+    "assets": [
+      "R409",
+      "R407",
+      "R406",
+      "R306",
+      "R408"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "SURGE-2026-01-02",
+      "SURGE-2026-01-02-R409",
+      "SURGE-2026-01-16-R409"
+    ],
+    "suggestion": "Investigate asset R409 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for R409 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "occupancy_surge",
+    "title": "Recurrent occupancy surge at R404",
+    "episode_count": 57,
+    "decision_count": 57,
+    "assets": [
+      "R404",
+      "R304",
+      "R306",
+      "R409",
+      "R407"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "SURGE-2026-01-14-R404",
+      "SURGE-2026-02-04-R404",
+      "SURGE-2026-02-05-R404"
+    ],
+    "suggestion": "Investigate asset R404 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for R404 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "occupancy_surge",
+    "title": "Recurrent occupancy surge at R408",
+    "episode_count": 53,
+    "decision_count": 53,
+    "assets": [
+      "R408",
+      "R409",
+      "R406",
+      "R407",
+      "R209"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "SURGE-2026-01-26-R408",
+      "SURGE-2026-02-04-R408",
+      "SURGE-2026-02-25-R408"
+    ],
+    "suggestion": "Investigate asset R408 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for R408 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "PLATO",
+    "category": "occupancy_surge",
+    "title": "Occupancy Surge: design review candidate",
+    "episode_count": 1656,
+    "decision_count": 1656,
+    "assets": [
+      "R409",
+      "R404",
+      "R408",
+      "R304",
+      "R407"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12",
+      "2027-01"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "SURGE-2026-01-02",
+      "SURGE-2026-01-02-R104",
+      "SURGE-2026-01-02-R201"
+    ],
+    "suggestion": "Review service-capacity assumptions under peak occupancy.",
+    "validation": "Require site validation, lifecycle-cost comparison, and engineering sign-off before design changes.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "room_turnaround",
+    "title": "Room Turnaround: rule and workflow review",
+    "episode_count": 852,
+    "decision_count": 2206,
+    "assets": [
+      "R102",
+      "R208",
+      "R204",
+      "R402",
+      "R103"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "TURN-R202-2026-01-02",
+      "TURN-R405-2026-01-04",
+      "TURN-R103-2026-01-05"
+    ],
+    "suggestion": "Recalibrate cleaning time estimates and shift-aware room assignment; preserve the release gate.",
+    "validation": "Compare promised check-in times, observed cleaning completions, and staffing conflicts.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "room_turnaround",
+    "title": "Recurrent room turnaround at R102",
+    "episode_count": 30,
+    "decision_count": 76,
+    "assets": [
+      "R102"
+    ],
+    "months": [
+      "2026-01",
+      "2026-03",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "TURN-R102-2026-01-10",
+      "TURN-R102-2026-01-12",
+      "TURN-R102-2026-03-07"
+    ],
+    "suggestion": "Investigate asset R102 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for R102 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "room_turnaround",
+    "title": "Recurrent room turnaround at R204",
+    "episode_count": 29,
+    "decision_count": 77,
+    "assets": [
+      "R204"
+    ],
+    "months": [
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "TURN-R204-2026-02-02",
+      "TURN-R204-2026-02-06",
+      "TURN-R204-2026-02-24"
+    ],
+    "suggestion": "Investigate asset R204 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for R204 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "room_turnaround",
+    "title": "Recurrent room turnaround at R208",
+    "episode_count": 29,
+    "decision_count": 71,
+    "assets": [
+      "R208"
+    ],
+    "months": [
+      "2026-01",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "TURN-R208-2026-01-19",
+      "TURN-R208-2026-01-25",
+      "TURN-R208-2026-03-04"
+    ],
+    "suggestion": "Investigate asset R208 before changing global thresholds; consider a targeted inspection or calibration.",
+    "validation": "Confirm independent occurrences for R208 and compare with peer assets and maintenance history.",
+    "basis": "at least three distinct detected episodes at the same asset",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "PLATO",
+    "category": "room_turnaround",
+    "title": "Room Turnaround: design review candidate",
+    "episode_count": 852,
+    "decision_count": 2206,
+    "assets": [
+      "R102",
+      "R208",
+      "R204",
+      "R402",
+      "R103"
+    ],
+    "months": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "TURN-R202-2026-01-02",
+      "TURN-R405-2026-01-04",
+      "TURN-R103-2026-01-05"
+    ],
+    "suggestion": "Evaluate housekeeping staging, room access and circulation bottlenecks.",
+    "validation": "Require site validation, lifecycle-cost comparison, and engineering sign-off before design changes.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "ventilation_maintenance",
+    "title": "Ventilation Maintenance: rule and workflow review",
+    "episode_count": 2,
+    "decision_count": 2,
+    "assets": [
+      "AHU1"
+    ],
+    "months": [
+      "2026-07",
+      "2026-10"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "FILTER-2026-07-19",
+      "FILTER-2026-10-16"
+    ],
+    "suggestion": "Review ventilation inspection cadence and filter-change triggers.",
+    "validation": "Verify against measured pressure drop, work orders, and post-maintenance readings.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "CLARA",
+    "category": "water_leak",
+    "title": "Water Leak: rule and workflow review",
+    "episode_count": 3,
+    "decision_count": 5,
+    "assets": [
+      "R403",
+      "WM_MAIN",
+      "R208"
+    ],
+    "months": [
+      "2026-06",
+      "2026-07",
+      "2026-11"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "LEAK-R403-2026-06-21",
+      "MAINLEAK-2026-07-11T00:00:00Z",
+      "LEAK-R208-2026-11-11"
+    ],
+    "suggestion": "Review overnight flow and meter reconciliation thresholds; isolate missing or unreliable submeters.",
+    "validation": "Manually label sampled alerts and benign high-use periods; compare precision and missed leaks.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  },
+  {
+    "audience": "PLATO",
+    "category": "water_leak",
+    "title": "Water Leak: design review candidate",
+    "episode_count": 3,
+    "decision_count": 5,
+    "assets": [
+      "R403",
+      "WM_MAIN",
+      "R208"
+    ],
+    "months": [
+      "2026-06",
+      "2026-07",
+      "2026-11"
+    ],
+    "median_confidence": 0.7,
+    "sample_episode_ids": [
+      "LEAK-R403-2026-06-21",
+      "MAINLEAK-2026-07-11T00:00:00Z",
+      "LEAK-R208-2026-11-11"
+    ],
+    "suggestion": "Evaluate branch-level metering and service access where independently confirmed gaps recur.",
+    "validation": "Require site validation, lifecycle-cost comparison, and engineering sign-off before design changes.",
+    "basis": "repeated episodes",
+    "status": "hypothesis_not_validated"
+  }
+]

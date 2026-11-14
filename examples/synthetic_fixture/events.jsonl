@@ -1,0 +1,2 @@
+{"event_id": "E1", "type": "checkout_early", "room_id": "R101", "timestamp_utc": "2026-01-06 10:00:00+00:00"}
+{"event_id": "E2", "type": "cleaning_completed", "room_id": "R101", "timestamp_utc": "2026-01-06 13:00:00+00:00"}

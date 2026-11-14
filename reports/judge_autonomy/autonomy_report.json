@@ -1,0 +1,35 @@
+{
+  "seed": 40,
+  "source": "decisions.jsonl",
+  "evaluation": {
+    "count": 6290,
+    "statuses": {
+      "awaiting_human_approval": 1528,
+      "deferred_resource_conflict": 1104,
+      "simulated_action_completed": 3658
+    },
+    "synthetic_successes": 2859,
+    "synthetic_completions": 3658,
+    "synthetic_success_rate": 0.78157,
+    "real_executions_verified": 0,
+    "real_improvement_claimed": false,
+    "limitations": [
+      "Synthetic deterministic outcomes are not independent evidence",
+      "No real actuation, approvals, guest messages or real-world feedback"
+    ]
+  },
+  "learning": {
+    "candidates_supported_by_synthetic_feedback": 2859,
+    "promoted_candidates": 0,
+    "promotion_allowed": false,
+    "reason": "Requires independent holdout evidence and authenticated operational outcomes"
+  },
+  "performance": {
+    "elapsed_seconds": 0.2029,
+    "decisions_per_second": 30997.04
+  },
+  "reproducibility": {
+    "deterministic_outputs": true,
+    "trace_sha256": "a89c51c6186198c52c2dc766405d901ce39819c479c5911b687c4851b03b2831"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "executor_statuses": {
+    "pending_verification": 122,
+    "pending_dependency": 170,
+    "proposal_only_not_dispatched": 18,
+    "pending_approval": 33,
+    "pending_resource": 127,
+    "logged_only": 4
+  },
+  "bridge_warnings": {},
+  "outcome_counts": {
+    "unknown": 474
+  },
+  "note": "Mock execution is not real execution. No lifecycle outcome was inferred."
+}

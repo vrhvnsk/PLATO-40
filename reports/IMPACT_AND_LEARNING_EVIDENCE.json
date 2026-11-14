@@ -1,0 +1,39 @@
+{
+  "decisions": 6290,
+  "issue_counts": {
+    "data_quality": 12,
+    "energy_optimization": 306,
+    "heating_comfort": 1824,
+    "heating_plant": 5,
+    "logistics": 274,
+    "occupancy_surge": 1656,
+    "room_turnaround": 2206,
+    "ventilation_maintenance": 2,
+    "water_leak": 5
+  },
+  "energy": {
+    "proposals": 306,
+    "proposals_with_gross_estimate": 306,
+    "sum_of_individual_gross_estimates_eur": 729.44,
+    "estimated_savings_eur": null,
+    "realized_savings_eur": null,
+    "reason": "Individual gross opportunities may overlap, and none is a verified, executed dispatch. Sum is NOT a portfolio savings estimate."
+  },
+  "operations": {
+    "cleaning_proposals": 2336,
+    "guest_notification_proposals": 912,
+    "maintenance_proposals": 7,
+    "confirmed_executions": 0,
+    "confirmed_successes": 0,
+    "confirmed_failures": 0,
+    "labor_hours_saved": null,
+    "deadlines_improved": null
+  },
+  "learning": {
+    "recommendations": 5,
+    "verified_recommendations": 0,
+    "unverified_recommendations": 5,
+    "verification_policy": "Requires explicit validation evidence references and a measured outcome; descriptive recommendations remain hypotheses."
+  },
+  "lifecycle_warnings": {}
+}

@@ -1,0 +1,30 @@
+{
+  "source": "/mnt/data/plato_work/plato40/decisions.jsonl",
+  "train_rows": 5000,
+  "internal_holdout_rows": 1290,
+  "holdout_provenance": "Temporal split of bundled data, NOT independent organizer holdout",
+  "episode_disjoint": true,
+  "replay_deterministic": true,
+  "trace_sha256": "d33b148f97156dec2ed3d91091811f772f2aa3139459bd2158361092c8ac4f4c",
+  "holdout_evaluation": {
+    "count": 1290,
+    "statuses": {
+      "awaiting_human_approval": 318,
+      "deferred_resource_conflict": 164,
+      "simulated_action_completed": 808
+    },
+    "synthetic_successes": 637,
+    "synthetic_completions": 808,
+    "synthetic_success_rate": 0.78837,
+    "real_executions_verified": 0,
+    "real_improvement_claimed": false,
+    "limitations": [
+      "Synthetic deterministic outcomes are not independent evidence",
+      "No real actuation, approvals, guest messages or real-world feedback"
+    ]
+  },
+  "holdout_replay_seconds": 0.0128,
+  "holdout_decisions_per_second": 100493.43,
+  "outcome_learning_validated": false,
+  "reason": "Bundled decisions have no authenticated post-action outcomes or counterfactual ground truth"
+}

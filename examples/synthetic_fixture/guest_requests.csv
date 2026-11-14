@@ -1,0 +1,2 @@
+request_id,timestamp_utc,room_id,request_type,language,response_due_utc
+Q1,2026-01-06 11:00:00+00:00,R101,early_checkin,de,2026-01-06 12:00:00+00:00

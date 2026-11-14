@@ -1,0 +1,202 @@
+{
+  "total": 482,
+  "diagnosis_counts": {
+    "mock_executor_gate_unmet": 191,
+    "unsupported_or_insufficient_rule": 142,
+    "temporal_candidate_only": 149
+  },
+  "mock_executor_status_counts": {
+    "pending_verification": 142,
+    "pending_dependency": 176,
+    "pending_approval": 33,
+    "pending_resource": 127,
+    "logged_only": 4
+  },
+  "unmatched_reasons": {
+    "No qualifying later observation in the configured window": 191
+  },
+  "by_action": {
+    "mock_executor_gate_unmet": {
+      "adjust_room_setpoint": 73,
+      "request_human_approval": 51,
+      "release_room": 29,
+      "schedule_cleaning": 37,
+      "dispatch_technician": 1
+    },
+    "unsupported_or_insufficient_rule": {
+      "optimize_energy": 18,
+      "notify_guest": 85,
+      "request_human_approval": 22,
+      "dispatch_robot": 4,
+      "order_service": 9,
+      "flag_anomaly": 4
+    },
+    "temporal_candidate_only": {
+      "schedule_cleaning": 86,
+      "adjust_room_setpoint": 43,
+      "request_human_approval": 17,
+      "dispatch_technician": 1,
+      "request_inspection": 1,
+      "release_room": 1
+    }
+  },
+  "examples": {
+    "mock_executor_gate_unmet": [
+      {
+        "decision_id": "D-42e3bacdb80bd13f",
+        "action": "adjust_room_setpoint",
+        "issue_type": "heating_comfort",
+        "observational_status": "no_observation_found",
+        "unmatched_reason": "No qualifying later observation in the configured window",
+        "mock_executor_status": "pending_verification",
+        "diagnosis": "mock_executor_gate_unmet",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-1b16bc1a8c8f3e8b",
+        "action": "adjust_room_setpoint",
+        "issue_type": "heating_comfort",
+        "observational_status": "no_observation_found",
+        "unmatched_reason": "No qualifying later observation in the configured window",
+        "mock_executor_status": "pending_verification",
+        "diagnosis": "mock_executor_gate_unmet",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-78d61e37bd81b2b3",
+        "action": "request_human_approval",
+        "issue_type": "heating_comfort",
+        "observational_status": "no_observation_found",
+        "unmatched_reason": "No qualifying later observation in the configured window",
+        "mock_executor_status": "pending_dependency",
+        "diagnosis": "mock_executor_gate_unmet",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-3dcba0807a2a3e5a",
+        "action": "request_human_approval",
+        "issue_type": "heating_comfort",
+        "observational_status": "no_observation_found",
+        "unmatched_reason": "No qualifying later observation in the configured window",
+        "mock_executor_status": "pending_dependency",
+        "diagnosis": "mock_executor_gate_unmet",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-c2dc1a9164ff3e5e",
+        "action": "release_room",
+        "issue_type": "room_turnaround",
+        "observational_status": "no_observation_found",
+        "unmatched_reason": "No qualifying later observation in the configured window",
+        "mock_executor_status": "pending_dependency",
+        "diagnosis": "mock_executor_gate_unmet",
+        "real_execution_confirmed": false
+      }
+    ],
+    "unsupported_or_insufficient_rule": [
+      {
+        "decision_id": "D-3bc47db1cc44a3b9",
+        "action": "optimize_energy",
+        "issue_type": "energy_optimization",
+        "observational_status": "not_evaluated",
+        "unmatched_reason": "No observational matching rule for this action/issue",
+        "mock_executor_status": "pending_verification",
+        "diagnosis": "unsupported_or_insufficient_rule",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-a5f3cdb13af4752b",
+        "action": "notify_guest",
+        "issue_type": "room_turnaround",
+        "observational_status": "not_evaluated",
+        "unmatched_reason": "No observational matching rule for this action/issue",
+        "mock_executor_status": "pending_dependency",
+        "diagnosis": "unsupported_or_insufficient_rule",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-d7a3df6ce0687b73",
+        "action": "request_human_approval",
+        "issue_type": "room_turnaround",
+        "observational_status": "not_evaluated",
+        "unmatched_reason": "No observational matching rule for this action/issue",
+        "mock_executor_status": "pending_approval",
+        "diagnosis": "unsupported_or_insufficient_rule",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-9c1c4054d36f4f03",
+        "action": "notify_guest",
+        "issue_type": "room_turnaround",
+        "observational_status": "not_evaluated",
+        "unmatched_reason": "No observational matching rule for this action/issue",
+        "mock_executor_status": "pending_dependency",
+        "diagnosis": "unsupported_or_insufficient_rule",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-2b4f45a92f79f0b5",
+        "action": "optimize_energy",
+        "issue_type": "energy_optimization",
+        "observational_status": "not_evaluated",
+        "unmatched_reason": "No observational matching rule for this action/issue",
+        "mock_executor_status": "pending_verification",
+        "diagnosis": "unsupported_or_insufficient_rule",
+        "real_execution_confirmed": false
+      }
+    ],
+    "temporal_candidate_only": [
+      {
+        "decision_id": "D-bd6f17100313b1fd",
+        "action": "schedule_cleaning",
+        "issue_type": "room_turnaround",
+        "observational_status": "candidate_observation",
+        "unmatched_reason": "candidate_found",
+        "mock_executor_status": "pending_resource",
+        "diagnosis": "temporal_candidate_only",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-0cee9100032aa3c6",
+        "action": "schedule_cleaning",
+        "issue_type": "occupancy_surge",
+        "observational_status": "candidate_observation",
+        "unmatched_reason": "candidate_found",
+        "mock_executor_status": "pending_resource",
+        "diagnosis": "temporal_candidate_only",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-13eb70563d6b08ef",
+        "action": "schedule_cleaning",
+        "issue_type": "occupancy_surge",
+        "observational_status": "candidate_observation",
+        "unmatched_reason": "candidate_found",
+        "mock_executor_status": "pending_resource",
+        "diagnosis": "temporal_candidate_only",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-1b66e4cfc521d1af",
+        "action": "schedule_cleaning",
+        "issue_type": "occupancy_surge",
+        "observational_status": "candidate_observation",
+        "unmatched_reason": "candidate_found",
+        "mock_executor_status": "pending_resource",
+        "diagnosis": "temporal_candidate_only",
+        "real_execution_confirmed": false
+      },
+      {
+        "decision_id": "D-46e0686d84e51223",
+        "action": "schedule_cleaning",
+        "issue_type": "occupancy_surge",
+        "observational_status": "candidate_observation",
+        "unmatched_reason": "candidate_found",
+        "mock_executor_status": "pending_resource",
+        "diagnosis": "temporal_candidate_only",
+        "real_execution_confirmed": false
+      }
+    ]
+  },
+  "disclaimer": "Mock executor gates are not evidence of actual execution; candidate observations are not causal outcomes."
+}

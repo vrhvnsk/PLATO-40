@@ -1,0 +1,41 @@
+{
+  "development": {
+    "seed": 40,
+    "source": "reports/final_release/decisions.jsonl",
+    "evaluation": {
+      "count": 474,
+      "statuses": {
+        "awaiting_human_approval": 124,
+        "deferred_resource_conflict": 58,
+        "simulated_action_completed": 292
+      },
+      "synthetic_successes": 238,
+      "synthetic_completions": 292,
+      "synthetic_success_rate": 0.81507,
+      "real_executions_verified": 0,
+      "real_improvement_claimed": false,
+      "limitations": [
+        "Synthetic deterministic outcomes are not independent evidence",
+        "No real actuation, approvals, guest messages or real-world feedback"
+      ]
+    },
+    "learning": {
+      "candidates_supported_by_synthetic_feedback": 238,
+      "promoted_candidates": 0,
+      "promotion_allowed": false,
+      "reason": "Requires independent holdout evidence and authenticated operational outcomes"
+    },
+    "performance": {
+      "elapsed_seconds": 0.0049,
+      "decisions_per_second": 96985.81
+    },
+    "reproducibility": {
+      "deterministic_outputs": true,
+      "trace_sha256": "6fb725f83e98c149ca4119cf2d7b8a89347355abfc6531e12cb2d1167a1ed342"
+    }
+  },
+  "holdout": {
+    "status": "not_run",
+    "reason": "Independent holdout data not supplied"
+  }
+}

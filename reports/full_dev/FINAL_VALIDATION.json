@@ -1,0 +1,161 @@
+{
+  "dataset": "PLATO40_v2_dev.zip",
+  "decision_count": 6290,
+  "episode_count": 4250,
+  "unique_ids": 6290,
+  "audit_findings": {},
+  "executor_statuses": {
+    "pending_verification": 1508,
+    "pending_dependency": 2038,
+    "pending_approval": 340,
+    "pending_resource": 2388,
+    "logged_only": 16
+  },
+  "pending_or_blocked": 6274,
+  "mock_simulated_completed": 0,
+  "learning_recommendations": [
+    {
+      "owner": "CLARA",
+      "title": "Review persistent cold-room escalations",
+      "supporting_ids": 8,
+      "all_ids_exist": true,
+      "status": "proposed_not_verified",
+      "confidence": "medium",
+      "impact_estimate": null
+    },
+    {
+      "owner": "CLARA",
+      "title": "Evaluate weekend cleaning capacity",
+      "supporting_ids": 8,
+      "all_ids_exist": true,
+      "status": "proposed_not_verified",
+      "confidence": "medium",
+      "impact_estimate": null
+    },
+    {
+      "owner": "CLARA",
+      "title": "Track outstanding vendor requests",
+      "supporting_ids": 8,
+      "all_ids_exist": true,
+      "status": "proposed_not_verified",
+      "confidence": "medium",
+      "impact_estimate": null
+    },
+    {
+      "owner": "PLATO",
+      "title": "Investigate plant maintainability and sensor redundancy",
+      "supporting_ids": 7,
+      "all_ids_exist": true,
+      "status": "proposed_not_verified",
+      "confidence": "low",
+      "impact_estimate": null
+    },
+    {
+      "owner": "PLATO",
+      "title": "Evaluate water-meter observability",
+      "supporting_ids": 3,
+      "all_ids_exist": true,
+      "status": "proposed_not_verified",
+      "confidence": "low",
+      "impact_estimate": null
+    }
+  ],
+  "action_counts": [
+    {
+      "issue": "data_quality",
+      "action": "flag_anomaly",
+      "count": 12
+    },
+    {
+      "issue": "energy_optimization",
+      "action": "optimize_energy",
+      "count": 306
+    },
+    {
+      "issue": "heating_comfort",
+      "action": "adjust_room_setpoint",
+      "count": 1140
+    },
+    {
+      "issue": "heating_comfort",
+      "action": "request_human_approval",
+      "count": 684
+    },
+    {
+      "issue": "heating_plant",
+      "action": "dispatch_technician",
+      "count": 5
+    },
+    {
+      "issue": "logistics",
+      "action": "dispatch_robot",
+      "count": 52
+    },
+    {
+      "issue": "logistics",
+      "action": "order_service",
+      "count": 222
+    },
+    {
+      "issue": "occupancy_surge",
+      "action": "notify_guest",
+      "count": 60
+    },
+    {
+      "issue": "occupancy_surge",
+      "action": "request_human_approval",
+      "count": 18
+    },
+    {
+      "issue": "occupancy_surge",
+      "action": "schedule_cleaning",
+      "count": 1578
+    },
+    {
+      "issue": "room_turnaround",
+      "action": "notify_guest",
+      "count": 852
+    },
+    {
+      "issue": "room_turnaround",
+      "action": "release_room",
+      "count": 502
+    },
+    {
+      "issue": "room_turnaround",
+      "action": "request_human_approval",
+      "count": 94
+    },
+    {
+      "issue": "room_turnaround",
+      "action": "schedule_cleaning",
+      "count": 758
+    },
+    {
+      "issue": "ventilation_maintenance",
+      "action": "flag_anomaly",
+      "count": 2
+    },
+    {
+      "issue": "water_leak",
+      "action": "dispatch_technician",
+      "count": 1
+    },
+    {
+      "issue": "water_leak",
+      "action": "flag_anomaly",
+      "count": 2
+    },
+    {
+      "issue": "water_leak",
+      "action": "request_inspection",
+      "count": 2
+    }
+  ],
+  "limitations": [
+    "Static audit is not exhaustive runtime safety certification.",
+    "No authenticated real approvals, occupancy snapshots, or physical execution records were provided.",
+    "Learning recommendations are hypotheses based on decision counts, not measured operational improvements.",
+    "Earlier 6260 decision count was from a different pipeline revision."
+  ]
+}

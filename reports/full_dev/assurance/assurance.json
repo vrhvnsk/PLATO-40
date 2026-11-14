@@ -1,0 +1,100 @@
+{
+  "decision_count": 6290,
+  "unique_event_ids": 6290,
+  "episode_count": 4250,
+  "counts": [
+    {
+      "issue_type": "data_quality",
+      "action": "flag_anomaly",
+      "count": 12
+    },
+    {
+      "issue_type": "energy_optimization",
+      "action": "optimize_energy",
+      "count": 306
+    },
+    {
+      "issue_type": "heating_comfort",
+      "action": "adjust_room_setpoint",
+      "count": 1140
+    },
+    {
+      "issue_type": "heating_comfort",
+      "action": "request_human_approval",
+      "count": 684
+    },
+    {
+      "issue_type": "heating_plant",
+      "action": "dispatch_technician",
+      "count": 5
+    },
+    {
+      "issue_type": "logistics",
+      "action": "dispatch_robot",
+      "count": 52
+    },
+    {
+      "issue_type": "logistics",
+      "action": "order_service",
+      "count": 222
+    },
+    {
+      "issue_type": "occupancy_surge",
+      "action": "notify_guest",
+      "count": 60
+    },
+    {
+      "issue_type": "occupancy_surge",
+      "action": "request_human_approval",
+      "count": 18
+    },
+    {
+      "issue_type": "occupancy_surge",
+      "action": "schedule_cleaning",
+      "count": 1578
+    },
+    {
+      "issue_type": "room_turnaround",
+      "action": "notify_guest",
+      "count": 852
+    },
+    {
+      "issue_type": "room_turnaround",
+      "action": "release_room",
+      "count": 502
+    },
+    {
+      "issue_type": "room_turnaround",
+      "action": "request_human_approval",
+      "count": 94
+    },
+    {
+      "issue_type": "room_turnaround",
+      "action": "schedule_cleaning",
+      "count": 758
+    },
+    {
+      "issue_type": "ventilation_maintenance",
+      "action": "flag_anomaly",
+      "count": 2
+    },
+    {
+      "issue_type": "water_leak",
+      "action": "dispatch_technician",
+      "count": 1
+    },
+    {
+      "issue_type": "water_leak",
+      "action": "flag_anomaly",
+      "count": 2
+    },
+    {
+      "issue_type": "water_leak",
+      "action": "request_inspection",
+      "count": 2
+    }
+  ],
+  "findings": [],
+  "finding_counts": {},
+  "interpretation": "Read-only static audit. Warnings are review candidates, not confirmed operational failures."
+}

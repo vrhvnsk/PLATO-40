@@ -1,0 +1,38 @@
+[
+  {
+    "issue_type": "room_turnaround",
+    "event_id": "D-94c4aafdf6ef6cc5"
+  },
+  {
+    "issue_type": "water_leak",
+    "event_id": "D-e67eb39080e459b4"
+  },
+  {
+    "issue_type": "heating_comfort",
+    "event_id": "D-fbe1ac6a83a3c5ad"
+  },
+  {
+    "issue_type": "heating_plant",
+    "event_id": "D-67bce8c75377bc85"
+  },
+  {
+    "issue_type": "logistics",
+    "event_id": "D-305024c4011eb138"
+  },
+  {
+    "issue_type": "energy_optimization",
+    "event_id": "D-dbd6f7950b2a76fb"
+  },
+  {
+    "issue_type": "data_quality",
+    "event_id": "D-474d7ab69d9a74b0"
+  },
+  {
+    "issue_type": "occupancy_surge",
+    "event_id": "D-086527e9b3c92d43"
+  },
+  {
+    "issue_type": "ventilation_maintenance",
+    "event_id": "D-3a89019c77640b4c"
+  }
+]
